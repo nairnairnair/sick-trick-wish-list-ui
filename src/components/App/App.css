@@ -19,4 +19,10 @@ h1 {
   margin-bottom: 240px;
 }
 
+.trickCard {
+  background-color: aqua;
+  color:black;
+  border-radius: 10px;
+  margin-bottom: 2.5vh;
+}
 
