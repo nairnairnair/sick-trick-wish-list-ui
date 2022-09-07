@@ -15,10 +15,19 @@ describe('Feedback Loop login flows', () => {
   })
 
   it('should be able to type data into the form inputs', () => {
-
+    cy.get('input[className=nameInput]').should('exist')
+    .type('ollie')
+    .should('have.value', 'ollie')
+    cy.get('input[className=tutorialInput]').should('exist')
+    .type('video link')
+    .should('have.value', 'video link')
   })
 
   it('should be able to add a new trick to the DOM', () => {
-    
+    cy.get('select').should('exist')
+    cy.get('input').should('exist')
+    cy.get('select').should('exist')
+    cy.get('input').should('exist')
+    cy.get('button').click()
   })
 })

@@ -9,8 +9,7 @@ class App extends Component {
       stance: [],
       name: [],
       obstacle: [],
-      tutorial: [],
-      id: []
+      tutorial: []
     }
   }
 
