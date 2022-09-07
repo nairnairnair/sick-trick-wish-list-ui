@@ -5,9 +5,16 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      
+
     }
   }
+
+  componentDidMount(){
+    return fetch('http://localhost:3001/api/v1/tricks')
+      .then(response => response.json())
+      .catch(error => console.log(error))
+  }
+
   render() {
     return (
       <div className="App">
@@ -18,3 +25,9 @@ class App extends Component {
 }
 
 export default App;
+
+//stance
+//name
+//obstacle
+//tutorial
+//id
