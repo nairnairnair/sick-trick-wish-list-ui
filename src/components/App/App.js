@@ -46,6 +46,24 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Sick Trick Wish List</h1>
+        <form>
+          <select className="stanceInput">
+            <option value="" disabled selected hidden>Choose your Stance</option>
+            <option value="Regular">Regular</option>
+            <option value="Switch">Switch</option>
+          </select>
+          <input className="nameInput" placeholder="Name of Trick"></input>
+          <select className="obstacleInput">
+            <option value="" disabled selected hidden>Choose your Obstacle</option>
+            <option value="Flatground">Flatground</option>
+            <option value="Ledge">Ledge</option>
+            <option value="Rail">Rail</option>
+            <option value="Stands">Stands</option>
+            <option value="Pool">Pool</option>
+          </select>
+          <input className="tutorialInput" placeholder="Link to Tutorial"></input>
+          <button className="sendIt">Send it!</button>
+        </form>
         <p>{this.mapTricks()}</p>
       </div>
     );
